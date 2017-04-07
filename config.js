@@ -21,14 +21,12 @@ module.exports = {
     }
   },
   lanyrd: {
-    overwriteDate: '2015-03-07', // for debugging
-    year: e.LANYRD_YEAR || '2015',
-    id: e.LANYRD_ID || 'concat',
+    overwriteDate: '2017-04-08', // for debugging
+    year: e.LANYRD_YEAR,
+    id: e.LANYRD_ID,
     showNext: 15000,
     roomColors: {
-      'Audimax': '#c30813',
-      'Room 110': '#169c19',
-      'Lounge': '#c35a18'
+      'Venue': '#c30813'
     }
   },
   admin: {
