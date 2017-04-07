@@ -1,4 +1,4 @@
-<h1 align="center">Twitterwall for MMT events</h1>
+# Twitterwall for MMT events
 
 ## Run Twitterwall
 
