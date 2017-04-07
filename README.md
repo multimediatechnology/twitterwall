@@ -1,7 +1,5 @@
 <h1 align="center">Twitterwall for MMT events</h1>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-[![Travis](https://img.shields.io/travis/conc-at/twitterwall.svg?style=flat)](https://travis-ci.org/conc-at/twitterwall)
 ## Run Twitterwall
 
     $ npm install && npm start
