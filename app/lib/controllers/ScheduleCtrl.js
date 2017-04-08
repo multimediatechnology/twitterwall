@@ -5,7 +5,7 @@ var randomColor = require('randomcolor')
 module.exports = function (app) {
   app.controller('ScheduleCtrl', function ($scope, $http, $interval, config) {
     var today = config.lanyrd.overwriteDate || (new Date()).toISOString().substr(0, 10)
-    var forerun = config.lanyrd.forerun || 1000 * 60 * 60
+    var forerun = config.lanyrd.forerun || 2 * 1000 * 60 * 60
     var roomColors = config.lanyrd.roomColors
 
     $scope.eventdayify = function (input) {
@@ -54,10 +54,11 @@ module.exports = function (app) {
 
       Object.keys(roomData).forEach(function (room) {
         roomData[room].some(function (talk) {
+
           var time = new Date(talk.start_time)
 
           var diff = time - now
-
+          console.log(time, diff)
           if (diff < 0 || diff > forerun) return false
 
           talk.style = {
